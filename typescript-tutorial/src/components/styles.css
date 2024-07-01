@@ -1,0 +1,49 @@
+.input-form {
+    align-items: center;
+    width: 90%;
+    display: flex;
+    position: relative;
+
+}
+
+.input-box {
+    width: 100%;
+    border-radius: 50px;
+    padding: 20px 30px;
+    border: none;
+    transition: .2s;
+    box-shadow: inset 0 0 5px black;
+    font-size: 20px;
+
+}
+
+.input-box:focus {
+    box-shadow: 0 0 10px 1000px rgba(0, 0, 0, .5);
+    outline: none;
+}
+
+.submit-button{
+    position:absolute;
+    padding: 15px 15px;
+    border-radius: 50px;
+    border: none;
+    right: 0px;
+    margin: 12px;
+    background-color: #2f74c0;
+    font-size: 15px;
+    color: white;
+    transition: .2s all;
+    box-shadow: 0 0 10px black;
+    text-transform: uppercase;
+    
+}
+
+.submit-button:hover{
+    background-color:#3c81ca ;
+
+}
+
+.submit-button:active{
+    transform: scale(.8);
+    box-shadow: 0 0 5px black;
+}
