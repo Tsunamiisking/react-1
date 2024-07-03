@@ -47,3 +47,53 @@
     transform: scale(.8);
     box-shadow: 0 0 5px black;
 }
+
+.todos{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    flex-wrap: wrap;
+}
+.single_todo{
+    display: flex;
+    width: 30%;
+    padding: 20px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-image: url('https://img.freepik.com/free-photo/blue-wall-background_53876-88663.jpg?w=360&t=st=1719846369~exp=1719846969~hmac=102b7f0e3bb34cf60835f544dc1a7a0b020b17ceb9a2088971b827763b1af101');
+}
+.todos-text{
+    flex: 1;
+    padding: 5px;
+    font-size: 20px;
+
+}
+
+.todos-text:focus{
+    outline: none;
+}
+.icon {
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 10px;
+}
+@media (max-width: 1200px) {
+    .single_todo {
+        width: 40%;
+      }
+  }
+
+
+@media (max-width: 700px) {
+    .input-box {
+        width: 95%;
+    }
+    .todos{
+        width: 95%;
+    }
+    .single_todo {
+        width: 100%;
+      }
+  }

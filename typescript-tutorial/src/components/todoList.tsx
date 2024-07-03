@@ -1,9 +1,24 @@
-import React from 'react'
+import React from 'react';
+import './styles.css';
+import { Todo } from '../model';
+import SingleTodo from './singleTodo';
 
-const TodoList = () => {
+type Props = {
+    todos: Todo[] ;
+    setTodos: React.Dispatch<React.SetStateAction<Todo[]>>;
+
+}
+
+const TodoList = ({todos, setTodos} : Props) => {
   return (
-    <div>
-      
+    <div className='todos'>
+      {todos.map( todo => (
+        <SingleTodo 
+        todo={todo} 
+        key={todo.id}
+        todos={todos}
+        setTodos={setTodos} />
+      ))}
     </div>
   )
 }
